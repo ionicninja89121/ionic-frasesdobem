@@ -1,0 +1,31 @@
+<ion-view view-title="">
+    <ion-content>
+      <ion-refresher
+          class="top-pull-refresh"
+          spinner = "bubbles"
+          pulling-text=""
+          on-refresh="doRefresh()">
+      </ion-refresher>
+      <div class="load-spinner" ng-hide="loaded">
+          <ion-spinner icon="bubbles" class="spinner-balanced"></ion-spinner>
+      </div>
+      <div on-swipe-right="onLoadPrevPost()"  on-swipe-left="onLoadNextPost()">
+        <img on-double-tap="onBookmark()" src="{{postInfo.acf.imagem}}" class="full-image" id="postImage">
+        <div class="ionic-app-container post-content" ng-bind-html="postInfo.content.rendered" on-hold="copyText()">
+        </div>
+      </div>
+    </ion-content>
+    <div class="footer-tab tabs tabs-icon-only app-barcolor">
+        <a class="tab-item" ng-click="onBookmark()">
+            <!--i class="icon ion-android-favorite-outline" id="iconBookmark"></i-->
+            <i class="icon ion-android-favorite" ng-show="bookmarked"></i>
+            <i class="icon ion-android-favorite-outline" ng-hide="bookmarked"></i>
+        </a>
+        <a class="tab-item" ng-click="downloadImg(postInfo.acf.imagem, postInfo.id)">
+            <i class="icon ion-archive"></i>
+        </a>
+        <a class="tab-item" ng-click="onSocialShare()">
+            <i class="icon ion-forward"></i>
+        </a>
+    </div>
+</ion-view>

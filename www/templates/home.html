@@ -1,0 +1,29 @@
+<ion-view view-title="">
+    <ion-nav-title>
+        <img src="img/app-logo-white.png" class="home-logo full-image">
+    </ion-nav-title>
+    <ion-content>
+        <ion-refresher
+            class="top-pull-refresh"
+            spinner = "bubbles"
+            pulling-text=""
+            on-refresh="doRefresh()">
+        </ion-refresher>
+        <div class="load-spinner" ng-hide="loaded">
+            <ion-spinner icon="bubbles" class="spinner-balanced"></ion-spinner>
+        </div>
+        <ion-list class="postsList">
+            <ion-item ng-repeat="post in postslist" href="#app/posts/{{post.id}}-">
+                <img src="{{post.acf.imagem}}" class="full-image">
+            </ion-item>
+        </ion-list>
+        <div class="more-load-spinner" ng-hide="moreLoaded">
+            <ion-spinner icon="bubbles" class="spinner-balanced"></ion-spinner>
+        </div>
+        <ion-infinite-scroll
+            on-infinite="loadMore()"
+            icon="ion-loading-c"
+            distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

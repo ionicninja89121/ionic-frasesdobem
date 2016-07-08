@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="app-barcolor bar-dark">
+      <ion-nav-back-button><!--class="button-icon button-clear ion-ios-arrow-left"-->
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-ios-search-strong" ng-click="searchPost()">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content class="left-sidemenu-container">
+      <div class="left-top-div app-barcolor">
+        <ion-list class="left-top-side-list dark-bg">
+          <ion-item menu-close class="item-icon-left" href="#/app/home">
+            <i class="icon ion-home"></i>
+            Novidades
+          </ion-item>
+          <ion-item menu-close class="item-icon-left" href="#/app/favorites">
+            <i class="icon ion-android-favorite"></i>
+            Favoritos
+          </ion-item>
+        </ion-list>
+      </div>
+      <ion-list class="left-sidemenu-list dark-bg">
+        <ion-item menu-close ng-repeat="category in categoryList" href="#/app/categories/{{category.id}}-{{category.description}}">
+          {{ category.name }}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

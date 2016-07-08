@@ -1,0 +1,18 @@
+<ion-list ng-controller="PostCtrl">
+    <ion-item class="item-icon-left" ng-click="shareFacebook('Frases do Bem', postInfo.acf.imagem, postInfo.link)">
+        <i class="icon ion-social-facebook"></i>
+        Facebook
+    </ion-item>
+    <ion-item class="item-icon-left" ng-click="shareInstagram('Frases do Bem', postInfo.acf.imagem, postInfo.link)">
+        <i class="icon ion-social-instagram"></i>
+        Instagram
+    </ion-item>
+    <ion-item class="item-icon-left" ng-click="shareWhatsApp('Frases do Bem', postInfo.acf.imagem, postInfo.link)">
+        <i class="icon ion-social-whatsapp"></i>
+        WhatsApp
+    </ion-item>
+    <ion-item class="item-icon-left" ng-click="shareAnywhere('Frases do Bem', postInfo.acf.imagem, postInfo.link)">
+        <i class="icon ion-ios-world"></i>
+        Mais...
+    </ion-item>
+</ion-list>

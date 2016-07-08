@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px !important;
+}
+.postsList, .product-list {
+    font-family: 'Roboto', sans-serif;
+}
+.postsList .item-content, .product-list .item-content {
+    padding: 0;
+}
+.postsList .item {
+    border-width: 0px;
+    margin-top: -5px;
+}
+.product-list .item, .service-list .item {
+    border-width: 0px;
+    padding: 0;
+}
+.title-bg {
+    padding: 18px;
+}
+.title-bg h3 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    white-space: normal;
+}
+.product-list .product-small-desc{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    white-space: normal;
+}
+.ionic-app-title {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.ionic-app-container {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.ionic-app-container p {
+    font-size: 19px;
+    padding: 10px;
+    line-height: 1.2;
+}
+.service-note {
+    margin-left: 10px;
+}
+.service-slide {
+    margin-bottom: 40px;
+}
+.ionic-app-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    display: inline-block;
+    float: none;
+    margin-right: -1%;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ionic-app-btn {
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    width: 100%;
+    vertical-align: middle;
+}
+.service-list .service-detail p {
+    white-space: normal;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-family: 'Roboto', sans-serif;
+}
+.service-list .service-title h2 {
+    font-size: 2.2em;
+    white-space: normal;
+    padding-bottom: 15px;
+}
+.company-intro {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+.footer-mark {
+    padding: 30px;
+}
+.left-sidemenu-container {
+    background-color: #1d3243;
+    color: #fff;
+}
+.app-barcolor {
+    color: #fff;
+    background-color: #396A92 !important;
+    border: 0;
+}
+.left-top-side-list .item-content, .left-top-side-list .item {
+    border-color: #1d3243;
+    border-top: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.left-sidemenu-list .item-content, .left-sidemenu-list .item {
+
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.left-sidemenu-list .item-content.activated, .left-sidemenu-list .item.activated,
+.left-top-side-list .item-content.activated, .left-top-side-list .item.activated{
+    background-color: #9AB4CB;
+}
+.img-round {
+    margin: auto;
+}
+.img-round img {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+}
+.left-sidemenu-container .ionic-app-title {
+    margin-top: -10px;
+    color: #fff;
+}
+.ionic-app-social-btn {
+    border-color: #fff !important;
+    background: transparent !important;
+    color: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+.footer-part {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    padding-top: 50px;
+    background-color: #f3f3f3;
+    margin-bottom: 0;
+}
+.footer-part a {
+    text-decoration: none;
+}
+strong {
+    font-weight: 700;
+}
+.footer-part a, .footer-part a:hover {
+    color: #999;
+}
+.back-text {
+    display: none !important;
+}
+.header-item.title {
+    text-align: center !important;
+}
+.postsList .slider-slides {
+    width: 100% !important;
+}
+.footer-tab .tab-item{
+    color: #fff;
+    opacity: 1;
+}
+.footer-tab .tab-item.activated{
+    opacity: 0.5;
+}
+.footer-tab {
+    background-size: 100% 0px;
+}
+.home-logo {
+    height: 100%;
+    object-fit: contain;
+}
+.left-top-div {
+    margin-bottom: 8px;
+}
+.ionic-app-btn-right {
+    position: absolute;
+    right: 0;
+}
+.ionic-app-flow-left {
+    position: relative;
+    float: left;
+}
+.ionic-app-flow-right {
+    position: relative;
+    float: right;
+}
+.search-form {
+    background-color: #eeeeee;
+    border-radius: 4px;
+    margin: 2px 50px 2px 8px;
+    width: 100%;
+    vertical-align: middle;
+}
+.search-form .row {
+    padding: 0;
+}
+.search-form-row .button, .search-form-row .button.activated, .search-form-row .button:hover {
+    color: #000;
+}
+.search-form-row input {
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margint: 0;
+    width: 100%;
+}
+.post-content {
+    margin-bottom: 40px;
+}
+.load-spinner {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    top: 150px;
+}
+.more-load-spinner {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.load-spinner .spinner, .more-load-spinner .spinner, .top-pull-refresh .spinner {
+    stroke: #396A92;
+    fill: #396A92;
+}
+.load-spinner .spinner svg {
+    width: 19% !important;
+    height: 85px !important;
+}
+.top-pull-refresh .spinner svg, .more-load-spinner .spinner svg {
+    width: 19% !important;
+    height: 45px !important;
+}
+.no-search-result p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.posts-list {
+    overflow: auto;
+}
+.ionic-app-alert .button-positive {
+    border-color: #396A92;
+    background-color: #396A92 !important;
+}
+.ionic-app-delete-fav {
+    position: absolute;
+    right: 0;
+    margin-top: -75px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background-color: #ad190e;
+}
+.ionic-app-delete-fav a {
+    position: relative;
+    font-size: 32px;
+    top: 18px;
+}
+.ionic-app-delete-fav .icon {
+    color: #fff;
+}
